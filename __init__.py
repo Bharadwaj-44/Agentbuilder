@@ -1,8 +1,34 @@
 """
-CRUD package
+Models package
 """
-from app.database.crud import user
-from app.database.crud  import ssa_agent, ssa_tool, ssa_llm
-from app.database.crud  import lsa_crud
+from app.database.data_classes.ssa_models import (
+    User,
+    UserAgent,
+    AgentDetails,
+    ToolDetails,
+    SnowflakeCortexLLM
+)
 
-__all__ = ["user", "ssa_agent", "ssa_tool", "ssa_llm", "lsa_crud"]
+from app.database.data_classes.lsa_models import (
+    LLMProvider,
+    LLMModel,
+    LangGraphAgent,
+    LangGraphAgentProfile,
+    MemoryConfigModel,
+    MCPTool
+)
+
+__all__ = [
+    "User",
+    "UserAgent",
+    "AgentDetails",
+    "ToolDetails",
+    "SnowflakeCortexLLM",
+    # LangGraph Database Models
+    "LLMProvider",
+    "LLMModel",
+    "LangGraphAgent",
+    "LangGraphAgentProfile",
+    "MemoryConfigModel",
+    "MCPTool"
+]
