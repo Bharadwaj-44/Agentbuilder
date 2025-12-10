@@ -1,0 +1,42 @@
+Agents:
+  {{agent_name}}:
+    dev:
+      db: {{db_dev}}
+      schema: {{schema}}
+      aplctn_cd : ""
+      env : "dev"
+      region_name : "us-east-2"
+      warehouse_size_suffix : ""
+      prefix : ""
+    sit:
+      db: {{db_sit}}
+      schema: {{schema}}
+      aplctn_cd : ""
+      env : "sit"
+      region_name : "us-east-2"
+      warehouse_size_suffix : ""
+      prefix : ""
+    uat:
+      db: {{db_uat}}
+      schema: {{schema}}
+      aplctn_cd : ""
+      env : "uat"
+      region_name : "us-east-2"
+      warehouse_size_suffix : ""
+      prefix : ""
+    preprod:
+      db: {{db_preprod}}
+      schema: {{schema}}
+      aplctn_cd : ""
+      env : "preprod"
+      region_name : "us-east-1"
+      warehouse_size_suffix : ""
+      prefix : ""
+    prod:
+      db: {{db_prod}}
+      schema: {{schema}}
+      aplctn_cd : ""
+      env : "prod"
+      region_name : "us-east-1"
+      warehouse_size_suffix : ""
+      prefix : ""
